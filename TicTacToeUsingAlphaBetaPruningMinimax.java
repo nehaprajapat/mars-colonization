@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -15,11 +14,21 @@ public class TicTacToeUsingAlphaBetaPruningMinimax {
 		{'-', '+', '-', '+', '-'},
 		{' ', '|', ' ', '|', ' '}
 		};
+		Scanner scan = new Scanner(System.in);
+		System.out.println("If you want to play first , enter 0 otherwise enter 1");
+		int result = scan.nextInt();
+		if (result == 0)
+		{
+			playgame1(gameBoard);
+		}
+		else
+		{
+			playgame2(gameBoard);
+		}
 		
-		playgame(gameBoard);
 		
 	}
-	public static void playgame(char[][] gameBoard)
+	public static void playgame1(char[][] gameBoard)
 	{
 		while(true)
 		{
@@ -46,9 +55,43 @@ public class TicTacToeUsingAlphaBetaPruningMinimax {
 			}
 			else if (winningGameValue() == 0)
 			{
+				System.out.println("Its a tie. ");
+				break;
+			}
+			
+		}
+	}
+	public static void playgame2(char[][] gameBoard)
+	{
+		while(true)
+		{
+			cpuplaying(gameBoard);
+			
+			printgameBoard(gameBoard);
+			if (winningGameValue() == 1)
+			{
+				System.out.println("Cpu won !sorry :(");
+				break;
+			}
+			else if (winningGameValue() == 0)
+			{
 				System.out.println("Its a tie");
 				break;
 			}
+			
+			userplaying(gameBoard);
+			if (winningGameValue() == -1)
+			{
+				System.out.println("Congratulations!! You won the game !");
+
+				break;
+			}
+			else if (winningGameValue() == 0)
+			{
+				System.out.println("Its a tie");
+				break;
+			}
+			
 			
 		}
 	}
@@ -62,10 +105,12 @@ public class TicTacToeUsingAlphaBetaPruningMinimax {
 			System.out.println("Position is already filled .Please enter again");
 			playerPos = scan.nextInt();
 		}
-		placePiece(gameBoard, playerPos, "player");
+		placePiece(gameBoard, playerPos);
 		printgameBoard(gameBoard);
 		System.out.println();
 	}
+	
+	
 	public static int minimax(char[][] gameBoard, int depth, boolean isMaximum , int alpha , int beta)
 	{
 		if (winningGameValue() != 5)
@@ -77,8 +122,7 @@ public class TicTacToeUsingAlphaBetaPruningMinimax {
 		{
 			int bestScore = Integer.MIN_VALUE;
 			
-			//int score = 0;
-			for (int i : arr)
+	        for (int i : arr)
 			{
 				for (int j : arr)
 					{
@@ -129,11 +173,12 @@ public class TicTacToeUsingAlphaBetaPruningMinimax {
 			return bestScore;
 		}
 	}
+	
+	
 	public static void cpuplaying(char[][] gameBoard)
 	{
 		int[] arr1 = {0,2,4};
 		int bestScore = Integer.MIN_VALUE;
-		//int best_i = 0 , best_j =0;
 		int[] arr2 = new int[2];
 		for (int i : arr1)
 		{
@@ -141,32 +186,28 @@ public class TicTacToeUsingAlphaBetaPruningMinimax {
 			{
 				if (gameBoard[i][j] == ' ')
 				{
-					// System.out.println(i + "  " + j);
+					
 					gameBoard[i][j] = '0';
 					cpuPositions.add( (i+j)/2  + i + 1 );
 					int score = minimax(gameBoard,0,false, Integer.MIN_VALUE , Integer.MAX_VALUE);
-					//System.out.println("score : " + score);
 					if (score > bestScore)
 					{
 						bestScore = score;
 						arr2[0] = i;
-						//System.out.println(arr2[0] + "arr2[0]");
+						
 						arr2[1] = j;
-						//System.out.println(arr2[0] + "arr2[1]");
+						
 					}
 					gameBoard[i][j] = ' ';
 					cpuPositions.pop();
 				}
 			}
 		}
-		
-		//System.out.println(arr2[0] + ": arr2[0]   " + arr2[1] + ": arr2[1]");
-		
 		gameBoard[arr2[0]][arr2[1]] = '0';
 		cpuPositions.add(   (arr2[0] + arr2[1])/2       + arr2[0] + 1);
-		//System.out.println(gameBoard[arr2[0]][arr2[1]] + "  gameboard placing 0 ");
 		
 	}
+	
 	public static void printgameBoard(char[][] gameBoard)
 	{
 		for (char[] row : gameBoard)
@@ -178,33 +219,28 @@ public class TicTacToeUsingAlphaBetaPruningMinimax {
 			System.out.println();
 		}
 	}
-	public static void placePiece(char[][] gameBoard, int pos, String user)
+	
+	public static void placePiece(char[][] gameBoard, int pos)
 	{
-		char symbol = 'X';
-		if (user.equals("player"))
-		{
-			symbol = 'X';
-			playerPositions.add(pos);
-		}
-		else if(user.equals("cpu"))
-		{
-			symbol = '0';
-			cpuPositions.add(pos);
-		}
+		
+		
+		playerPositions.add(pos);
+		
 		if (pos == 1 || pos == 2 || pos ==3)
 		{
-			gameBoard[0][2 * (pos-1)] = symbol;
+			gameBoard[0][2 * (pos-1)] = 'X';
 		}
 		else if (pos == 4 || pos ==5 || pos ==6)
 		{
-			gameBoard[2][2 * pos - 8] = symbol;
+			gameBoard[2][2 * pos - 8] = 'X';
 		}
 		else if (pos == 7 || pos ==8 || pos ==9)
 		{
-			gameBoard[4][2 * pos -14] = symbol;
+			gameBoard[4][2 * pos -14] = 'X';
 		}
 				
 	}
+	
 	public static int winningGameValue()
 	{
 		
