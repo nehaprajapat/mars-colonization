@@ -1,0 +1,51 @@
+*{
+   margin:auto;
+border: 50px white solid;
+}
+
+/*.button{
+	align-self: center;
+	padding:20px 15px;
+	margin:10px;
+	background-color: black;
+	color:white;
+}*/
+.container{
+width:80%;
+align-self: auto;
+/*background-color: green;*/
+}
+#human-vs-human{
+	align-self: center;
+	padding:20px 15px;
+	margin:10px;
+	background-color: black;
+	color:white;
+	/*position: absolute;*/
+	/*top: 200px;*/
+}
+#human-vs-machine{
+	padding:20px 15px;
+	margin:10px;
+	background-color: black;
+	color:white;
+}
+#machine-vs-machine{
+	padding:20px 15px;
+	margin:10px;
+	background-color: black;
+	color:white;
+}
+#human-vs-human:hover{
+	background-color: blue;
+	color:white;
+}
+#human-vs-machine:hover{
+	background-color: blue;
+	color:white;
+}
+#machine-vs-machine:hover{
+	background-color: blue;
+	color:white;
+}
+/*"css-files/my-styles.css"*/
