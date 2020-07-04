@@ -37,7 +37,7 @@ align-self: auto;
 	color:white;
 }
 #human-vs-human:hover{
-	background-color: blue;
+	background-color: red;
 	color:white;
 }
 #human-vs-machine:hover{
