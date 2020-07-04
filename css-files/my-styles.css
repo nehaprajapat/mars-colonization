@@ -17,7 +17,7 @@ align-self: auto;
 }
 #human-vs-human{
 	align-self: center;
-	padding:10px 10px;
+	padding:20px 15px;
 	margin:10px;
 	background-color: black;
 	color:white;
@@ -25,13 +25,13 @@ align-self: auto;
 	/*top: 200px;*/
 }
 #human-vs-machine{
-	padding:10px 10px;
+	padding:20px 15px;
 	margin:10px;
 	background-color: black;
 	color:white;
 }
 #machine-vs-machine{
-	padding:10px 10px;
+	padding:20px 15px;
 	margin:10px;
 	background-color: black;
 	color:white;
