@@ -2,9 +2,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class TicTacToeUsingAlphaBetaPruningMinimax {
+public class HumanVsHuman {
 	static Stack<Integer> firstplayerPositions = new Stack<Integer>();
 	static Stack<Integer> secondplayerPositions = new Stack<Integer>();
+	//static Stack<Integer> cpuPositions = new Stack<Integer>();
 	public static void main(String args[])
 	{
 		char[][] gameBoard = {
@@ -126,7 +127,7 @@ public class TicTacToeUsingAlphaBetaPruningMinimax {
 	}
 	
 	
-	public static int minimax(char[][] gameBoard, int depth, boolean isMaximum , int alpha , int beta)
+/*	public static int minimax(char[][] gameBoard, int depth, boolean isMaximum , int alpha , int beta)
 	{
 		if (winningGameValue() != 5)
 		{
@@ -221,7 +222,7 @@ public class TicTacToeUsingAlphaBetaPruningMinimax {
 		gameBoard[arr2[0]][arr2[1]] = '0';
 		cpuPositions.add(   (arr2[0] + arr2[1])/2       + arr2[0] + 1);
 		
-	}
+	}*/
 	
 	public static void printgameBoard(char[][] gameBoard)
 	{
