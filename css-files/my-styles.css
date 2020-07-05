@@ -58,15 +58,15 @@ td {
   height: 100px;
 }
 table {
-  margin: 5px auto;
+  margin: 15px auto;
 }
 .vert {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  border-left: 20px solid black;
+  border-right: 20px solid black;
 }
 .hori {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 20px solid black;
+  border-bottom: 20px solid black;
 }
 	
 
