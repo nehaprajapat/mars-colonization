@@ -21,7 +21,7 @@ align-self: auto;
 #human-vs-human{
 	align-self: center;
 	padding:20px 15px;
-	margin:5px;
+	margin:10px;
 	background-color: black;
 	color:white;
 	/*position: absolute;*/
@@ -29,13 +29,13 @@ align-self: auto;
 }
 #human-vs-machine{
 	padding:20px 15px;
-	margin:5px;
+	margin:10px;
 	background-color: black;
 	color:white;
 }
 #machine-vs-machine{
 	padding:20px 15px;
-	margin:5px;
+	margin:10px;
 	background-color: black;
 	color:white;
 }
