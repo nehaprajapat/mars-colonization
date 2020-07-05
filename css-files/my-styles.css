@@ -1,11 +1,9 @@
+  
 *{
    margin:auto;
 border: 50px white solid;
 }
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.125rem;
-}
+
 /*.button{
 	align-self: center;
 	padding:20px 15px;
@@ -51,5 +49,5 @@ align-self: auto;
 	background-color: blue;
 	color:white;
 }
-
 /*"css-files/my-styles.css"*/
+
