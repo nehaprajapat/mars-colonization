@@ -17,7 +17,7 @@ h1 {
 width:80%;
 align-self: auto;
 /*background-color: green;*/
-}
+
 #human-vs-human{
 	align-self: center;
 	padding:20px 15px;
@@ -115,5 +115,5 @@ align-self: auto;
 #squareA {
     border-top-left-radius: 0.25rem;
 }	
-
+}
 /*"css-files/my-styles.css"*/
