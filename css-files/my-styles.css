@@ -49,7 +49,7 @@ align-self: auto;
 	color:white;
 }
 
-
+#board{
 h1 {
   text-align: center;
 }
@@ -68,6 +68,6 @@ table {
   border-top: 20px solid black;
   border-bottom: 20px solid black;
 }
-	
+}	
 
 /*"css-files/my-styles.css"*/
