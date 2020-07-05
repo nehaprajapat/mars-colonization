@@ -6,11 +6,37 @@
 
 </head>
 <body>
-		<div class ="container">
-		<button id="human-vs-human">Human vs Human</button>
-		<button id="human-vs-machine">Human vs Machine</button>
-		<button id="machine-vs-machine">Machine vs Machine</button>
-	<div class="board" id="board">
+		<div id="charachters">
+				<div class="field">
+					<label>Type</label>
+					<div class="player_1_choices" id="type">
+						<ul>
+							<li data-value="1" class="active">Human</li>
+						</ul>
+					</div>
+				</div>
+			        <div class="field">
+					<label>Type</label>
+					<div class="player_2_choices" id="type">
+						<ul>
+							<li data-value="1" class="active">Human</li>
+							<li data-value="2">Machine</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="field">
+					<label>Starting Player</label>
+					<div class="starting_player_choices" id="starting_player">
+						<ul>
+							<li data-value="1" class="active">Player-1</li>
+							<li data-value="0">Player-2</li>
+						</ul>
+					</div>
+				</div>
+
+				<button id="newgame">New Game</button>
+			</div>
 		
 
 
