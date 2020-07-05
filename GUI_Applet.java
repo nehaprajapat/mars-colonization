@@ -1,7 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import 
+import TicTacToeUsingAlphaBetaPruningMinimax;
+import HumanVsHuman;
 
 public class GUI_Applet extends JFrame,Applet implements ActionListener{
    private static final long serialVersionUID = 7148354192453031633L;
@@ -74,6 +75,8 @@ public class GUI_Applet extends JFrame,Applet implements ActionListener{
 		// Set GUI window to visible and disable resizing
 		setVisible(true);
 		setResizable(false);
+		
+		
 
 	}
 
