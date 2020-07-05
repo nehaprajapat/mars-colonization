@@ -48,4 +48,66 @@ align-self: auto;
 	background-color: blue;
 	color:white;
 }
+
+
+#charachters {
+		display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    margin-bottom: 30px;
+	    position: relative;
+		
+	p {
+		font-family: 'Raleway', sans-serif;
+		text-align: center;
+		font-size: 13px;
+		font-weight: 300;
+		color: #b3b3b3;
+		a {
+			color: #505050;
+			text-decoration: none;
+		}
+	}
+	.field {
+		margin-bottom: 30px;
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			border: 1px solid #8c8c8c;
+   			border-radius: 2px;
+   			overflow: hidden;
+		    font-size: 15px;
+			li {
+				float: left;
+				padding: 10px 15px;
+				border-right: 1px solid #8c8c8c;
+			    cursor: pointer;
+			    color: #8c8c8c;
+			    &:hover {
+			    	background-color: #b7b7b7;
+					color: #fff;
+			    }
+				&.active {
+					background-color: #8c8c8c;
+					color: #fff;
+				}
+				&:last-child {
+					border-right: none;
+				}
+			}
+		}
+		.starting_player_choices {
+			ul li {
+				width: 50%;
+				text-align: center;
+			}
+		}
+		label {
+			font-weight: 600;
+			margin-bottom: 15px;
+			display: block;
+		}
+	}
+}
 /*"css-files/my-styles.css"*/
