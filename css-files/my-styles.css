@@ -51,69 +51,25 @@ align-self: auto;
 	background-color: blue;
 	color:white;
 }
-
-
-#board {
-    padding: 3rem;
-    margin: 1.5rem;
-    text-align: center;
+#board{
+h1 {
+  text-align: center;
 }
-
-.square {
-    float: left;
-    clear: right;
-    width: 100px;
-    height: 100px;
-    background-color: #f8F9fa;
+td {
+  width: 100px;
+  height: 100px;
 }
-
-.square:hover {
-    cursor: pointer;
+table {
+  margin: 5px auto;
 }
-
-.row {
-    margin: 0 auto;
-    width: 302px;
+.vert {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
-
-.top {
-    border-bottom-color: rgba(52, 58, 64, 0.500);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+.hori {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
-
-.bottom {
-    border-top-color: rgba(52, 58, 64, 0.500);
-    border-top-style: solid;
-    border-top-width: 1px;
 }
-
-.left {
-    border-right-color: rgba(52, 58, 64, 0.500);
-    border-right-style: solid;
-    border-right-width: 1px;
-}
-
-.right {
-    border-left-color: rgba(52, 58, 64, 0.500);
-    border-left-style: solid;
-    border-left-width: 1px;
-}
-
-#squareC {
-    border-top-right-radius: 0.25rem;
-}
-
-#squareI {
-    border-bottom-right-radius: 0.25rem;
-}
-
-#squareG {
-    border-bottom-left-radius: 0.25rem;
-}
-
-#squareA {
-    border-top-left-radius: 0.25rem;
-}	
 }
 /*"css-files/my-styles.css"*/
