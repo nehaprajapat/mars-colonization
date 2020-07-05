@@ -21,7 +21,7 @@ align-self: auto;
 #human-vs-human{
 	align-self: center;
 	padding:20px 15px;
-	margin:10px;
+	margin:5px;
 	background-color: black;
 	color:white;
 	/*position: absolute;*/
@@ -29,13 +29,13 @@ align-self: auto;
 }
 #human-vs-machine{
 	padding:20px 15px;
-	margin:10px;
+	margin:5px;
 	background-color: black;
 	color:white;
 }
 #machine-vs-machine{
 	padding:20px 15px;
-	margin:10px;
+	margin:5px;
 	background-color: black;
 	color:white;
 }
@@ -50,26 +50,6 @@ align-self: auto;
 #machine-vs-machine:hover{
 	background-color: blue;
 	color:white;
-}
-#board{
-h1 {
-  text-align: center;
-}
-td {
-  width: 1000px;
-  height: 1000px;
-}
-table {
-  margin: 15px auto;
-}
-.vert {
-  border-left: 20px solid black;
-  border-right: 20px solid black;
-}
-.hori {
-  border-top: 20px solid black;
-  border-bottom: 20px solid black;
-}
 }
 }
 /*"css-files/my-styles.css"*/
