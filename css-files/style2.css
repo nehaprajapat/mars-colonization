@@ -1,0 +1,149 @@
+body{
+	border:0;
+	margin: 0;
+	padding: 0; 
+}
+#background{
+	width:100vw;
+	height: 100vh;
+}
+#boy-white{
+	position: absolute;
+	top:0vh;
+	left:0vw;
+	width: 22vw;
+	height:39vh;
+	animation:animat1 1.5s 1;
+	animation-timing-function: linear;
+}
+/*#vs1{
+	font-family: 'Lilita One', cursive;
+	font-size: 40px;
+	position:absolute;
+	left:26vw;
+	top:16.5vh;
+}*/
+#boy-orange{
+	position:absolute;
+	top:0vh;
+	left: 23vw;
+	width:22vw;
+	height: 39vh;
+	animation:animat2 1.5s 1;
+	animation-timing-function: linear;
+}
+#boy-robot{
+position: absolute;
+left:53vw;
+top:58vh;
+    width:22vw;
+    height:39vh;
+    animation:animat4 1.5s 1;
+    /*animation-delay: 3s;*/
+	animation-timing-function: linear;
+}
+#robot{
+position:absolute;
+top:58vh;
+left:78vw;
+width:22vw;
+height: 39vh;
+animation:animat5 1.5s 1;
+ /*animation-delay: 3s;*/
+	animation-timing-function: linear;
+}
+/*.container1{
+		background-color:skyblue;
+	     position: absolute;
+	      top:41%;
+	      left:45%;
+	     width:10%;
+	     height: 50px;
+		text-align: center;
+		display: inline-block;
+}
+.container2{
+	background-color:skyblue;
+	     position: absolute;
+	      top:50%;
+	      left:45%;
+	     width:10%;
+	     height: 50px;
+		text-align: center;
+		display: inline-block;
+}
+.container1:hover{
+	background-color: grey;
+}
+.container2:hover{
+	background-color: grey;
+}*/
+#h-h{
+	position: absolute;
+	left:50vw;
+	top:50vh;
+}
+#button1{
+	background-color: #F67148;
+	position:absolute;
+    left:16vw;
+    top:20vh;
+   width:10vw;
+    height:10vh;
+    border: none;
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+    border-radius: 15px;
+   /* animation:animat3 1s 1;
+	animation-timing-function: ease-in-out;*/
+}
+#button1:hover{
+	background-color: #1ED2F6;
+}
+#button2{
+    background-color: #F67148;
+	position:absolute;
+    left:71vw;
+    top:70vh;
+   width:10vw;
+    height:10vh;
+    border: none;
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+    border-radius: 15px;
+}
+#button2:hover{
+	background-color: #1ED2F6;
+}
+a:link{
+	text-decoration: none;
+	font-size: 22px;
+   
+}
+a:hover{
+	text-decoration: none;
+	color:black;
+}
+a:active{
+	color: black;
+}
+@keyframes animat1{
+	from{top:100vh;}
+	to{top:0vh;}
+}
+@keyframes animat2{
+	from{left:100vw;}
+	to{left:23vw;}
+}
+@keyframes animat3{
+	from{ width:7.5vw;font-size:10px;}
+	to{width:10vw;font-size:20px;}
+}
+@keyframes animat4{
+     from{left:0vw;}
+     to{left:53vw;}
+}
+@keyframes animat5{
+     from{top:0vw;}
+     to{top:58vh;}
+}
